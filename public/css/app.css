@@ -1,0 +1,1077 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background: #f5f7fa;
+
+    color: #1f2937;
+
+    line-height: 1.6;
+
+    min-height: 100vh;
+}
+
+
+/* =====================================================
+   LINKS
+===================================================== */
+
+a {
+    text-decoration: none;
+
+    color: inherit;
+}
+
+
+/* =====================================================
+   NAVBAR
+===================================================== */
+
+.navbar {
+    background: #ffffff;
+
+    border-bottom: 1px solid #e5e7eb;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+}
+
+
+.navbar-container {
+    width: min(1200px, 92%);
+
+    margin: auto;
+
+    min-height: 70px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+}
+
+
+/* =====================================================
+   LOGO
+===================================================== */
+
+.logo {
+    font-size: 23px;
+
+    font-weight: 800;
+
+    color: #ff4500;
+
+    white-space: nowrap;
+
+    transition: 0.2s;
+}
+
+
+.logo:hover {
+    transform: scale(1.03);
+}
+
+
+/* =====================================================
+   NAV MENU
+===================================================== */
+
+.nav-menu {
+    flex: 1;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+
+/* =====================================================
+   SEARCH
+===================================================== */
+
+.search-form {
+    display: flex;
+
+    align-items: center;
+
+    width: min(350px, 100%);
+
+    background: #f1f3f5;
+
+    border: 1px solid transparent;
+
+    border-radius: 25px;
+
+    overflow: hidden;
+
+    transition: 0.2s;
+}
+
+
+.search-form:focus-within {
+    background: #ffffff;
+
+    border-color: #ff4500;
+
+    box-shadow:
+        0 0 0 3px rgba(255, 69, 0, 0.08);
+}
+
+
+.search-form input {
+    flex: 1;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    padding: 11px 16px;
+
+    font-size: 14px;
+}
+
+
+.search-form button {
+    border: none;
+
+    background: transparent;
+
+    cursor: pointer;
+
+    padding: 10px 15px;
+
+    font-size: 16px;
+}
+
+
+/* =====================================================
+   NAV LINKS
+===================================================== */
+
+.nav-links {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+}
+
+
+.nav-links a,
+.nav-logout {
+    border: none;
+
+    background: transparent;
+
+    padding: 9px 12px;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    color: #4b5563;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+.nav-links a:hover,
+.nav-logout:hover {
+    background: #f3f4f6;
+
+    color: #ff4500;
+}
+
+
+.nav-register {
+    background: #ff4500 !important;
+
+    color: #ffffff !important;
+
+    padding: 10px 17px !important;
+}
+
+
+.nav-register:hover {
+    background: #e03d00 !important;
+
+    color: #ffffff !important;
+}
+
+
+.logout-form {
+    margin: 0;
+}
+
+
+/* =====================================================
+   MOBILE MENU BUTTON
+===================================================== */
+
+.mobile-menu-button {
+    display: none;
+
+    border: none;
+
+    background: transparent;
+
+    font-size: 25px;
+
+    cursor: pointer;
+}
+
+
+/* =====================================================
+   MAIN
+===================================================== */
+
+.main-container {
+    width: min(1200px, 92%);
+
+    margin: 35px auto;
+
+    min-height: calc(100vh - 180px);
+}
+
+
+/* =====================================================
+   CARD
+===================================================== */
+
+.card {
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 12px;
+
+    padding: 24px;
+
+    margin-bottom: 20px;
+
+    box-shadow:
+        0 2px 5px rgba(0, 0, 0, 0.04);
+}
+
+
+.card:hover {
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.06);
+}
+
+
+/* =====================================================
+   HEADINGS
+===================================================== */
+
+h1 {
+    font-size: 30px;
+
+    margin-bottom: 20px;
+
+    color: #111827;
+}
+
+
+h2 {
+    font-size: 23px;
+
+    margin-bottom: 15px;
+
+    color: #111827;
+}
+
+
+h3 {
+    font-size: 18px;
+
+    margin-bottom: 10px;
+
+    color: #111827;
+}
+
+
+/* =====================================================
+   BUTTONS
+===================================================== */
+
+.btn {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 7px;
+
+    border: none;
+
+    background: #ff4500;
+
+    color: #ffffff;
+
+    padding: 10px 18px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    transition: 0.2s;
+}
+
+
+.btn:hover {
+    background: #e03d00;
+
+    transform: translateY(-1px);
+}
+
+
+.btn-secondary {
+    background: #6b7280;
+}
+
+
+.btn-secondary:hover {
+    background: #4b5563;
+}
+
+
+.btn-danger {
+    background: #dc2626;
+}
+
+
+.btn-danger:hover {
+    background: #b91c1c;
+}
+
+
+.btn-success {
+    background: #16a34a;
+}
+
+
+.btn-success:hover {
+    background: #15803d;
+}
+
+
+/* =====================================================
+   FORMS
+===================================================== */
+
+form {
+    display: block;
+}
+
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+
+label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    color: #374151;
+}
+
+
+input,
+textarea,
+select {
+    width: 100%;
+
+    padding: 11px 13px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 8px;
+
+    background: #ffffff;
+
+    color: #111827;
+
+    font-size: 15px;
+
+    outline: none;
+
+    transition: 0.2s;
+}
+
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #ff4500;
+
+    box-shadow:
+        0 0 0 3px rgba(255, 69, 0, 0.08);
+}
+
+
+textarea {
+    resize: vertical;
+
+    min-height: 120px;
+}
+
+
+input[type="file"] {
+    padding: 9px;
+}
+
+
+/* =====================================================
+   ALERTS
+===================================================== */
+
+.alert {
+    display: flex;
+
+    gap: 10px;
+
+    padding: 14px 17px;
+
+    border-radius: 9px;
+
+    margin-bottom: 20px;
+
+    font-size: 14px;
+}
+
+
+.alert-success {
+    background: #ecfdf5;
+
+    border: 1px solid #a7f3d0;
+
+    color: #065f46;
+}
+
+
+.alert-error {
+    background: #fef2f2;
+
+    border: 1px solid #fecaca;
+
+    color: #991b1b;
+}
+
+
+.alert ul {
+    margin-top: 6px;
+
+    padding-left: 20px;
+}
+
+
+/* =====================================================
+   ERROR
+===================================================== */
+
+.error {
+    color: #dc2626;
+
+    font-size: 13px;
+
+    margin-top: 5px;
+}
+
+
+/* =====================================================
+   POST
+===================================================== */
+
+.post-card {
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 12px;
+
+    margin-bottom: 18px;
+
+    overflow: hidden;
+
+    transition: 0.2s;
+}
+
+
+.post-card:hover {
+    border-color: #d1d5db;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+
+.post-body {
+    padding: 20px;
+}
+
+
+.post-author {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 13px;
+
+    color: #6b7280;
+
+    font-size: 14px;
+}
+
+
+.post-title {
+    font-size: 21px;
+
+    font-weight: 750;
+
+    margin-bottom: 10px;
+
+    color: #111827;
+}
+
+
+.post-title a:hover {
+    color: #ff4500;
+}
+
+
+.post-content {
+    color: #374151;
+
+    white-space: pre-line;
+
+    margin-bottom: 15px;
+}
+
+
+.post-image {
+    width: 100%;
+
+    max-height: 550px;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+
+    margin-top: 10px;
+}
+
+
+/* =====================================================
+   POST ACTIONS
+===================================================== */
+
+.post-actions {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    border-top: 1px solid #f0f0f0;
+
+    padding-top: 14px;
+
+    margin-top: 15px;
+}
+
+
+.action-button {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 5px;
+
+    padding: 7px 10px;
+
+    border: none;
+
+    background: #f3f4f6;
+
+    border-radius: 7px;
+
+    cursor: pointer;
+
+    color: #4b5563;
+
+    font-size: 13px;
+
+    transition: 0.2s;
+}
+
+
+.action-button:hover {
+    background: #e5e7eb;
+
+    color: #ff4500;
+}
+
+
+.action-button.liked {
+    color: #ff4500;
+
+    background: #fff1eb;
+}
+
+
+/* =====================================================
+   AVATAR
+===================================================== */
+
+.avatar {
+    width: 40px;
+
+    height: 40px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    background: #e5e7eb;
+}
+
+
+.avatar-large {
+    width: 110px;
+
+    height: 110px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    background: #e5e7eb;
+
+    border: 4px solid #ffffff;
+
+    box-shadow:
+        0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.avatar-placeholder {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #ff4500;
+
+    color: #ffffff;
+
+    font-weight: 800;
+}
+
+
+/* =====================================================
+   COMMUNITY
+===================================================== */
+
+.community-image {
+    width: 70px;
+
+    height: 70px;
+
+    border-radius: 12px;
+
+    object-fit: cover;
+
+    background: #e5e7eb;
+}
+
+
+.community-card {
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 12px;
+
+    padding: 20px;
+
+    transition: 0.2s;
+}
+
+
+.community-card:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+
+.community-header {
+    display: flex;
+
+    gap: 15px;
+
+    align-items: center;
+}
+
+
+/* =====================================================
+   GRID
+===================================================== */
+
+.grid {
+    display: grid;
+
+    gap: 20px;
+}
+
+
+.grid-2 {
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+}
+
+
+.grid-3 {
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+}
+
+
+.grid-4 {
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+}
+
+
+/* =====================================================
+   FLEX
+===================================================== */
+
+.flex {
+    display: flex;
+}
+
+
+.flex-between {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+}
+
+
+.flex-center {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+.gap-10 {
+    gap: 10px;
+}
+
+
+.gap-15 {
+    gap: 15px;
+}
+
+
+/* =====================================================
+   PROFILE
+===================================================== */
+
+.profile-header {
+    text-align: center;
+
+    padding: 35px 20px;
+}
+
+
+.profile-name {
+    font-size: 27px;
+
+    font-weight: 800;
+
+    margin-top: 12px;
+}
+
+
+.profile-bio {
+    color: #6b7280;
+
+    max-width: 600px;
+
+    margin: 10px auto 20px;
+}
+
+
+/* =====================================================
+   COMMENTS
+===================================================== */
+
+.comment {
+    padding: 15px;
+
+    border-bottom: 1px solid #eeeeee;
+}
+
+
+.comment:last-child {
+    border-bottom: none;
+}
+
+
+.comment-header {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin-bottom: 5px;
+}
+
+
+.comment-author {
+    font-weight: 700;
+
+    font-size: 14px;
+}
+
+
+.comment-content {
+    color: #374151;
+
+    white-space: pre-line;
+}
+
+
+/* =====================================================
+   PAGINATION
+===================================================== */
+
+.pagination {
+    display: flex;
+
+    justify-content: center;
+
+    margin-top: 25px;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.footer {
+    background: #ffffff;
+
+    border-top: 1px solid #e5e7eb;
+
+    margin-top: 50px;
+}
+
+
+.footer-container {
+    width: min(1200px, 92%);
+
+    margin: auto;
+
+    padding: 25px 0;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    color: #6b7280;
+
+    font-size: 13px;
+}
+
+
+/* =====================================================
+   EMPTY STATE
+===================================================== */
+
+.empty-state {
+    text-align: center;
+
+    padding: 60px 20px;
+
+    color: #6b7280;
+}
+
+
+.empty-state-icon {
+    font-size: 45px;
+
+    margin-bottom: 15px;
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .navbar-container {
+        flex-wrap: wrap;
+
+        padding: 12px 0;
+    }
+
+
+    .mobile-menu-button {
+        display: block;
+
+        margin-left: auto;
+    }
+
+
+    .nav-menu {
+        display: none;
+
+        width: 100%;
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        padding: 15px 0;
+    }
+
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+
+    .search-form {
+        width: 100%;
+    }
+
+
+    .nav-links {
+        flex-direction: column;
+
+        align-items: stretch;
+
+        width: 100%;
+    }
+
+
+    .nav-links a,
+    .nav-logout {
+        width: 100%;
+
+        text-align: center;
+    }
+
+
+    .grid-3,
+    .grid-4 {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .main-container {
+        width: 94%;
+
+        margin-top: 20px;
+    }
+
+
+    .card {
+        padding: 17px;
+    }
+
+
+    h1 {
+        font-size: 25px;
+    }
+
+
+    .grid-2,
+    .grid-3,
+    .grid-4 {
+        grid-template-columns: 1fr;
+    }
+
+
+    .post-body {
+        padding: 16px;
+    }
+
+
+    .post-title {
+        font-size: 19px;
+    }
+
+
+    .footer-container {
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 5px;
+    }
+
+}
